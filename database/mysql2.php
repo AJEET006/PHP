@@ -11,7 +11,7 @@
         die("sorry unable to connect with database");
     }
     echo "connection build successfully";
-    $sql = "create table emp(id int primary key,name varchar(50),salary int)";
+    $sql = "create table Person(id int primary key auto_increment,email varchar(50),password varchar(50))";
     //creating a database with name php
     $result = mysqli_query($conn,$sql);
 ?>
