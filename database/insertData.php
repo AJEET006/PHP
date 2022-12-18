@@ -50,7 +50,7 @@
 if($_SERVER['REQUEST_METHOD']=='POST')
 {
   $email=$_POST['email'];
-  $password=$_POST['pass'];
+  $password1=$_POST['pass'];
 
 //   echo $email."<br>";
 //   echo $password."<br>";
@@ -67,7 +67,7 @@ $conn = mysqli_connect($servername,$username,$password,$database);
     }
     else
     {
-        $sql = "insert into `person`(`email`,`password`) values('$email','$password')";
+        $sql = "insert into `person`(`email`,`password`) values('$email','$password1')";
 
         $result = mysqli_query($conn,$sql);
         if($result)
